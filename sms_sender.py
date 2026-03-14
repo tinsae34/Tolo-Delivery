@@ -6,8 +6,8 @@ from datetime import datetime
 from geopy.geocoders import Nominatim   
 
 
-AFRO_API_KEY = 'eyJhbGciOiJIUzI1NiJ9.eyJpZGVudGlmaWVyIjoiTW9UZ0lGNHF6VEM4TzJYZEhXZXEyRGFST3BmVFJPY1AiLCJleHAiOjE5MDg0NTIxMjUsImlhdCI6MTc1MDY4NTcyNSwianRpIjoiNzlkYTg2Y2UtOTMyNi00MjY5LWFlMzItZjViYzk5MTBmNDVjIn0.h2naggGilCNEZOUlKqP1JRLrqn_2KP_a6QdVnlSUJ-Y'
-AFRO_SENDER_ID = 'AfroMessage'
+AFRO_API_KEY = ""
+AFRO_SENDER_ID = ''
 
 
 
