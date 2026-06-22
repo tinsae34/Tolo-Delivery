@@ -6,12 +6,12 @@ from datetime import datetime
 from geopy.geocoders import Nominatim   
 
 
-AFRO_API_KEY = ""
-AFRO_SENDER_ID = ''
+AFRO_API_KEY = os.getenv("AFRO_API_KEY")
+AFRO_SENDER_ID = os.getenv("AFRO_SENDER_ID")
 
 
 
-BOT_TOKEN = '7590641106:AAGhh9fzTDITL9M5z4PylzzRvPS9sVZGyhA'
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 API_URL = f'https://api.telegram.org/bot{BOT_TOKEN}'
 JSON_FILE = 'messages.json'
 STATE_FILE = 'user_states.json'
@@ -23,8 +23,6 @@ geolocator = Nominatim(user_agent="ssas-bot")
 
 
 # Create files if not exist
-
-
 for file in [JSON_FILE, STATE_FILE]:
     if not os.path.exists(file):
         with open(file, 'w') as f:
